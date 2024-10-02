@@ -1,7 +1,7 @@
 import { ADD_PEER, REMOVE_PEER } from "./peersActions";
 
 export const initialState = {};
-type PeerState = Record<string, { stream: MediaStream }>;
+export type PeerState = Record<string, { stream: MediaStream }>;
 type PeerAction =
     | {
           type: typeof ADD_PEER;
